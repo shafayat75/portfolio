@@ -32,6 +32,7 @@ export const profile = {
     email: "mailto:shafayathossainpranto2025@gmail.com",
   },
   githubUsername: "shafayat75",
+  siteUrl: "https://shafayat-web-dev-portfolio.vercel.app",
   /** Formspree endpoint — see README step 5. Leave "" to fall back to mailto. */
   formspreeEndpoint: "",
 };
