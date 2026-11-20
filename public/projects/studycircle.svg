@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1030"/>
+      <stop offset="55%" stop-color="#141a44"/>
+      <stop offset="100%" stop-color="#0a2a35"/>
+    </linearGradient>
+    <linearGradient id="ac" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c8cff"/>
+      <stop offset="100%" stop-color="#45e0c8"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#5b6cff" stop-opacity=".40"/>
+      <stop offset="100%" stop-color="#5b6cff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="7"/></filter>
+  </defs>
+
+  <rect width="900" height="560" fill="url(#bg)"/>
+  <g stroke="#ffffff" stroke-opacity=".05">
+    <path d="M0 80H900M0 160H900M0 240H900M0 320H900M0 400H900M0 480H900"/>
+    <path d="M75 0V560M150 0V560M225 0V560M300 0V560M375 0V560M450 0V560M525 0V560M600 0V560M675 0V560M750 0V560M825 0V560"/>
+  </g>
+  <rect width="900" height="560" fill="url(#halo)"/>
+
+  <!-- connection lines -->
+  <g stroke="url(#ac)" stroke-opacity=".55" stroke-width="1.6" fill="none">
+    <path d="M450 280 L250 170"/><path d="M450 280 L670 165"/>
+    <path d="M450 280 L230 400"/><path d="M450 280 L690 405"/>
+    <path d="M450 280 L450 120"/><path d="M450 280 L450 450"/>
+    <path d="M250 170 L450 120"/><path d="M450 120 L670 165"/>
+    <path d="M230 400 L450 450"/><path d="M450 450 L690 405"/>
+    <path d="M250 170 L230 400" stroke-opacity=".25"/>
+    <path d="M670 165 L690 405" stroke-opacity=".25"/>
+  </g>
+
+  <!-- glow behind centre -->
+  <circle cx="450" cy="280" r="54" fill="#5b6cff" opacity=".45" filter="url(#soft)"/>
+
+  <!-- outer nodes -->
+  <g>
+    <circle cx="250" cy="170" r="30" fill="#141a44" stroke="url(#ac)" stroke-width="2"/>
+    <circle cx="250" cy="163" r="8" fill="#7c8cff"/>
+    <path d="M236 182c0-8 6-13 14-13s14 5 14 13z" fill="#7c8cff" opacity=".8"/>
+
+    <circle cx="670" cy="165" r="30" fill="#141a44" stroke="url(#ac)" stroke-width="2"/>
+    <circle cx="670" cy="158" r="8" fill="#45e0c8"/>
+    <path d="M656 177c0-8 6-13 14-13s14 5 14 13z" fill="#45e0c8" opacity=".8"/>
+
+    <circle cx="230" cy="400" r="30" fill="#141a44" stroke="url(#ac)" stroke-width="2"/>
+    <circle cx="230" cy="393" r="8" fill="#45e0c8"/>
+    <path d="M216 412c0-8 6-13 14-13s14 5 14 13z" fill="#45e0c8" opacity=".8"/>
+
+    <circle cx="690" cy="405" r="30" fill="#141a44" stroke="url(#ac)" stroke-width="2"/>
+    <circle cx="690" cy="398" r="8" fill="#7c8cff"/>
+    <path d="M676 417c0-8 6-13 14-13s14 5 14 13z" fill="#7c8cff" opacity=".8"/>
+
+    <circle cx="450" cy="120" r="26" fill="#141a44" stroke="url(#ac)" stroke-width="2"/>
+    <circle cx="450" cy="114" r="7" fill="#7c8cff"/>
+    <path d="M438 131c0-7 5-11 12-11s12 4 12 11z" fill="#7c8cff" opacity=".8"/>
+
+    <circle cx="450" cy="450" r="26" fill="#141a44" stroke="url(#ac)" stroke-width="2"/>
+    <circle cx="450" cy="444" r="7" fill="#45e0c8"/>
+    <path d="M438 461c0-7 5-11 12-11s12 4 12 11z" fill="#45e0c8" opacity=".8"/>
+  </g>
+
+  <!-- centre: book -->
+  <circle cx="450" cy="280" r="46" fill="#0d1030" stroke="url(#ac)" stroke-width="2.5"/>
+  <g transform="translate(450,280)">
+    <path d="M-22-14c7-5 15-5 22-1 7-4 15-4 22 1v30c-7-5-15-5-22-1-7-4-15-4-22 1z" fill="none" stroke="url(#ac)" stroke-width="2.4" stroke-linejoin="round"/>
+    <path d="M0-15v30" stroke="url(#ac)" stroke-width="2.4"/>
+  </g>
+
+  <text x="60" y="516" font-family="monospace" font-size="19" fill="#9aa0b8" letter-spacing="2">peer study group finder</text>
+  <g transform="translate(700,496)">
+    <rect width="140" height="30" rx="15" fill="#45e0c8" fill-opacity=".14" stroke="#45e0c8" stroke-opacity=".45"/>
+    <circle cx="20" cy="15" r="4" fill="#f0b429"/>
+    <text x="34" y="20" font-family="monospace" font-size="13" fill="#45e0c8">in progress</text>
+  </g>
+</svg>
